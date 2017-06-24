@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pk.appsoftware.appsoftware.CargarActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_cargar"
+        android:id="@+id/include2" />
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="504dp" />
+
+    <Button
+        android:id="@+id/boton_datos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:text="datos"
+        app:layout_anchor="@+id/include2"
+        app:layout_anchorGravity="bottom|center_horizontal" />
+
+    <ImageView
+        android:id="@+id/imagen_dinamica"
+        android:layout_width="74dp"
+        android:layout_height="64dp"
+        android:layout_gravity="top|right"
+        app:layout_anchor="@+id/include2"
+        app:layout_anchorGravity="bottom|left"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+</android.support.design.widget.CoordinatorLayout>
